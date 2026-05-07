@@ -1,0 +1,4 @@
+module test-table-r (test)
+
+import table.test (test)
+import table-r

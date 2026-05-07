@@ -1,0 +1,11 @@
+name: table-r
+version: 0.1.0
+homepage: https://github.com/morloclib/table-r
+synopsis: R implementations for the table stdlib module
+description: arrow R package-backed Table operations.
+category: data
+license: MIT
+author: "Zebulun Arendsee"
+maintainer: "z@morloc.io"
+github: https://github.com/morloclib/table-r
+bug-reports: https://github.com/morloclib/table-r
