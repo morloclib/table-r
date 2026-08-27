@@ -9,3 +9,5 @@ author: "Zebulun Arendsee"
 maintainer: "z@morloc.io"
 github: https://github.com/morloclib/table-r
 bug-reports: https://github.com/morloclib/table-r
+r-deps:
+  arrow: "*"
