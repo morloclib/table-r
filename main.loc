@@ -18,6 +18,7 @@ source R from "R/table.R"
     , "morloc_sortRows"      as sortRows
     , "morloc_getCol"        as getCol
     , "morloc_setCol"        as setCol
+    , "morloc_setCol"        as addCol
     , "morloc_dropCols"      as dropCols
     , "morloc_selectCols"    as selectCols
     , "morloc_selectColsDyn" as selectColsDyn
