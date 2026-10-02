@@ -88,10 +88,12 @@ morloc_sortRows <- function(spec, t) {
     } else if (is.numeric(v)) {
       cols[[i]] <- -v
     } else {
-      cols[[i]] <- -xtfrm(v)
+      # Code-point rank, as in the ascending case; xtfrm would follow
+      # the locale's collation.
+      cols[[i]] <- -match(v, sort(unique(v), method = "radix"))
     }
   }
-  ord <- do.call(order, cols)
+  ord <- do.call(order, c(cols, list(method = "radix")))
   arrow::record_batch(df[ord, , drop = FALSE])
 }
 
